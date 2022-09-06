@@ -56,6 +56,10 @@ struct FirstTabView: View {
             Text("func test_that_this_is_working_hehe")
             Text("Auto-closing menus")
             Button("28Macau") {}
+            HStack {
+                Toggle("it's ON", isOn: Binding.constant(true))
+                Toggle("it's OFF", isOn: Binding.constant(false))
+            }
         }
         .padding()
     }
